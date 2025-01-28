@@ -1,0 +1,1 @@
+More details, please refer to [Theme Hero](https://mdfriday.com/posts/theme-hero.html)
