@@ -1,1 +1,0 @@
-Refer to [Hugo Book](https://github.com/mdfriday/hugo-book)

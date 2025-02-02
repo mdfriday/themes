@@ -1,0 +1,1 @@
+Refer to [Theme Book](https://github.com/mdfriday/hugo-book)
