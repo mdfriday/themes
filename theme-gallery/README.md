@@ -1,0 +1,1 @@
+More details, please refer to [Theme Gallery](https://help.mdfriday.com/book/themes/gallery)
