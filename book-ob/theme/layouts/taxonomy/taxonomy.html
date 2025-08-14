@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="markdown book-post">
+  <h1>{{ .Title | title }}</h1>
+  {{ with index .Site.Taxonomies.Values .Page.Type }}
+  {{ $taxonomies := . }}
+  {{ range $name, $pages := $taxonomies.Values }}
+  <div>
+    <h2>{{ $name }} <sup>{{ $pages.Count }}</sup></h2>
+    {{ range $pages }}
+    <p><a href="{{ .RelPermalink }}">{{ .Title }} </a></p>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}
+{{ end }}
+
+{{ define "toc" }}
+{{ partial "docs/taxonomy" . }}
+{{ end }}

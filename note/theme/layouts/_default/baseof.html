@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+    <link rel="icon" href="{{ "favicon.svg" | relURL }}" >
+    
+    <!-- Theme CSS -->
+    {{ $theme := .Params.theme | default "note" }}
+    <link rel="stylesheet" href="{{ printf "css/themes/%s.css" $theme | relURL }}">
+    <link rel="stylesheet" href="{{ "css/obsidian.css" | relURL }}">
+
+</head>
+<body style="overflow: auto; -webkit-user-select: text; -moz-user-select: text; user-select: text;" class="theme-light">
+    {{- block "main" . }}{{- end }}
+</body>
+</html>

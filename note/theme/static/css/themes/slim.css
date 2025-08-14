@@ -1,0 +1,255 @@
+.container-layout{
+  background-color: #000000;
+  padding: 24px;
+}
+
+/* 文章内容设置 */
+.article {
+  padding: 2em 60px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #333;
+  background: #fff;
+  font-family:
+    PingFang SC,
+    Verdana,
+    Helvetica Neue,
+    Microsoft Yahei,
+    Hiragino Sans GB,
+    Microsoft Sans Serif,
+    WenQuanYi Micro Hei,
+    sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 标题样式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  color: #333;
+  line-height: 1.35;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.4em;
+  padding-bottom: 1em;
+  border-bottom: 3px double #eee;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5,
+h6 {
+  font-size: 1.2em;
+}
+
+/* 段落样式 */
+p {
+  font-weight: 300;
+  margin-bottom: 1.2em;
+}
+
+strong {
+  font-weight: bolder;
+  color: #000;
+}
+
+em {
+  font-style: italic;
+}
+
+/* 列表样式 */
+ul,
+ol {
+  font-weight: 300;
+  margin-left: 1.3em;
+}
+
+ul {
+  font-weight: 300;
+  list-style: circle;
+}
+
+ol {
+  font-weight: 300;
+  list-style: decimal;
+}
+
+li ul {
+  font-weight: 300;
+  list-style: circle;
+}
+
+/* 引用块样式 */
+blockquote {
+  color: #999;
+  border-left: 1px solid #1abc9c;
+  padding-left: 1em;
+  margin: 1em 3em 1em 2em;
+}
+
+/* 链接样式 */
+a {
+  color: #1abc9c;
+  text-decoration: none;
+  border-bottom: 1px solid #1abc9c;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #555;
+  border-bottom-color: #555;
+}
+
+/* 水平分割线 */
+hr {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 0.8em;
+  height: 10px;
+}
+
+/* 代码块和内联代码 */
+pre,
+code {
+  font-family: "Courier New", monospace;
+  background: #ededeb;
+  color: #eb5757;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+
+pre {
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  padding: 1em 0.5em;
+  overflow-x: auto;
+}
+
+code {
+  /*font-size: 85%;*/
+}
+
+/* 表格样式 */
+table {
+  font-weight: 300;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead th {
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+}
+
+tbody td {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: #666;
+}
+
+/* 图片样式 */
+img {
+  max-width: 100%;
+}
+
+/* Highlight.js */
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+
+.hljs {
+  color: #383a42;
+  /*background: #fafafa;*/
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e45649;
+}
+
+.hljs-literal {
+  color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+  color: #50a14f;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #4078f2;
+}
+
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}

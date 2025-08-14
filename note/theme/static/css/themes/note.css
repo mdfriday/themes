@@ -1,0 +1,338 @@
+.container-layout{
+    background-color: #efe7db;
+    padding: 36px;
+}
+
+/* light */
+.article {
+    padding: 32px;
+    border-radius: 8px;
+    background: white;
+    color-scheme: light;
+    color: #222222;
+    font-family: AvenirNext-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1.5rem 0 0.75em;
+    font-family: AvenirNext-Medium, serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: #262626;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+/* general themes */
+p, pre, ul, ol, dl, form, details, dl, blockquote, table, xmp, plaintext, listing, figure,
+pre[class*="language-"] {
+    margin: 0.75em 0 0.45em;
+}
+
+/* 段落样式 */
+p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* 引用样式 */
+blockquote {
+    background-color: #ffffff;
+    padding-left: 0.8em;
+    border-left: 0.2em solid #007acb;
+    margin: 1rem 0;
+}
+
+blockquote > blockquote {
+    margin: 0;
+    border-left: 0.2em double #007acb;
+}
+
+li > blockquote {
+    margin: 0.5rem;
+    margin-left: -0.8rem;
+}
+
+/* 列表样式 */
+ul ul, ul ol, ol ul, ol ol {
+    margin-bottom: 0px;
+    margin-top: 0.25em;
+    margin-left: 2em;
+}
+li ul, li ol {
+    margin-top: 0.25em;
+    margin-left: 2em;
+}
+
+li {
+    word-wrap: break-all;
+}
+
+ul, ol {
+    list-style-type: disc;
+}
+
+ul {
+    margin-left: 1.3em;
+    padding: 0;
+}
+
+ol {
+    margin-left: 1.3em;
+    padding: 0;
+    counter-reset: ol_counter;
+    list-style-type: auto;
+}
+
+ul > li {
+    position: relative;
+}
+
+ol > li {
+    position: relative;
+}
+
+li + li {
+    margin-top: 0.25em;
+}
+
+/* 图片样式 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #dddddd;
+}
+
+/* 代码块样式 */
+pre, pre[class*="language-"] {
+    padding: 0;
+    border: 0;
+}
+pre, xmp, plaintext, listing, code, kbd, tt, samp {
+    font-family: Menlo-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+code {
+    display: inline;
+    border: solid 2px #f3f5f7;
+    padding: 0.2em 0.5em;
+    font-size: 0.9em;
+    color: #444444;
+    background-color: #f3f5f7;
+}
+
+pre > code {
+    display: block;
+    border: none;
+    padding: 0.7em 1em;
+    font-size: 0.9em;
+    overflow-x: auto
+}
+
+pre {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+mark {
+    color: inherit;
+    display: inline;
+    padding: 0.2em 0.5em;
+    background-color: #fcffc0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #222222;
+    background-color: white;
+    font-size: 1em;
+    border-spacing: 0;
+    border: 1px solid #cecece;
+}
+
+th, td {
+    padding: 0.7em 1em;
+    font-size: 0.9em;
+    border: 1px solid #cecece;
+    border-top: none;
+    border-bottom: none;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle
+}
+
+thead th {
+    background-color: #f3f4f6;
+    color: #434343;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+/* 链接样式 */
+a {
+    color: #007acb;
+    text-decoration: underline;
+}
+
+/* divider */
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: #bfbfbf;
+    border-style: inset;
+    border-width: 1px;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* Highlight.js */
+
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+}
+
+code.hljs {
+    padding: 3px 5px;
+}
+
+.hljs {
+    color: #444444;
+    background: #fafafa;
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: #a0a1a7;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+    color: #007acb;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+    color: #e45649;
+}
+
+.hljs-literal {
+    color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+    color: #c92626;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+    color: #005f87;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+    color: #4078f2;
+}
+
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+    color: #c18401;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-link {
+    text-decoration: underline;
+}

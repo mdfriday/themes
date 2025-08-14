@@ -1,0 +1,46 @@
+[
+	{
+		"id": 1,
+		"name": "Book",
+		"author": "Alex Shpak",
+		"version": "1.0",
+		"screenshot": "https://gohugo.net/tn-book.png",
+		"download_url": "https://gohugo.net/book.zip",
+		"demo_url": "https://theme-book.mdfriday.com",
+		"demo_notes_url": "https://github.com/mdfriday/themes/tree/main/book",
+		"tags": [
+			"Book",
+			"Doc"
+		]
+	},
+	{
+		"id": 2,
+		"name": "Note",
+		"author": "MDFriday Team",
+		"version": "1.0",
+		"screenshot": "https://gohugo.net/tn-note.png",
+		"download_url": "https://gohugo.net/note.zip",
+		"demo_url": "https://theme-note.mdfriday.com",
+		"demo_notes_url": "https://github.com/mdfriday/themes/tree/main/note",
+		"tags": [
+			"Page",
+			"Obsidian",
+			"Notes"
+		]
+	},
+	{
+		"id": 3,
+		"name": "Obsidian Book",
+		"author": "MDFriday Team",
+		"version": "1.0",
+		"screenshot": "https://gohugo.net/tn-book-ob.jpg",
+		"download_url": "https://gohugo.net/book-ob.zip",
+		"demo_url": "https://theme-book-ob.mdfriday.com",
+		"demo_notes_url": "https://github.com/mdfriday/themes/tree/main/book-ob",
+		"tags": [
+			"Book",
+			"Obsidian",
+			"Doc"
+		]
+	}
+]
