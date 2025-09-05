@@ -1,0 +1,12 @@
+name = "Base"
+license = "MIT"
+licenselink = "https://github.com/mdfriday/themes/blob/master/LICENSE"
+description = "Base theme for global use"
+homepage = "https://github.com/mdfriday/themes"
+demosite = "https://themes.mdfriday.com/base/"
+tags = ["blog", "documentation", "portfolio", "one-page", "personal", "responsive", "seo", "single-page", "simple", "clean"]
+features = []
+
+[author]
+  name = "MDFriday Teams"
+  homepage = "https://mdfriday.com"

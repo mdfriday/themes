@@ -23,7 +23,7 @@
     <ul>
       {{ range .Site.Languages }}{{ with index $translations .Lang }}
       <li>
-        <a href="{{ cond hugo.IsMultihost .Permalink .RelPermalink }}">
+        <a href="{{ .RelPermalink }}">
           {{ .Language.LanguageName }}
         </a>
       </li>

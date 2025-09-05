@@ -1,0 +1,22 @@
+  {{- $id := or (.Get "id") "" -}}
+  {{- $user := or (.Get "user") "" -}}
+
+  {{- if and $id $user -}}
+    {{- template "render-x" (dict "id" $id "user" $user "dnt" true "ctx" .) -}}
+  {{- else -}}
+    {{- errorf "The %q shortcode requires two named parameters: user and id. See %s" .Name .Position -}}
+  {{- end -}}
+
+{{- define "render-x" -}}
+  {{- $url := printf "https://x.com/%v/status/%v" .user .id -}}
+  {{- $query := querify "url" $url "dnt" .dnt -}}
+  {{- $request := printf "https://publish.x.com/oembed?%s" $query -}}
+  {{- with (resources.GetRemote $request) -}}
+    {{- with .Content -}}
+      {{- $json := . | transform.Unmarshal -}}
+      {{- with $json.html -}}
+        {{- . | safeHTML -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

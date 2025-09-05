@@ -1,0 +1,12 @@
+{{- $biliHost := "player.bilibili.com" -}}
+{{- $id := .Get "id" | default (.Get 0) -}}
+{{- $width := .Get "width" | default "100" -}}
+{{- $height := .Get "height" | default "300" -}}
+{{- $class := .Get "class" | default (.Get 1) -}}
+{{- $title := .Get "title" | default "Bilibili Video" }}
+{{- $autoplay := .Get "autoplay" | default "0" }}
+{{- $page := .Get "page" | default (.Get "p") | default "1" }}
+<div {{ with $class }}class="{{ . }}"{{ else }}style="width: {{ $width }}%; margin: 0 auto;"{{ end }}>
+  <iframe src="//{{ $biliHost }}/player.html?isOutside=true&bvid={{ $id }}&p={{ $page }}&autoplay={{ $autoplay }}"
+          width="100%" height="{{ $height }}" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" title="{{ $title }}"></iframe>
+</div>

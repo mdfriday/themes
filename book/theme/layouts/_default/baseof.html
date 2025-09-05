@@ -43,6 +43,10 @@
   </main>
 
   {{ partial "docs/inject/body" . }}
+
+  {{ if .Site.Params.branding }}
+    {{ partial "mdf-brand" . }}
+  {{ end }}
 </body>
 </html>
 
@@ -65,7 +69,7 @@
 {{ end }}
 
 {{ define "comments" }}
-  {{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
+{{ if .Params.comments }}
   <div class="book-comments">
     {{- partial "docs/comments" . -}}
   </div>

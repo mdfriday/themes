@@ -11,9 +11,38 @@
     {{ $theme := .Params.theme | default "note" }}
     <link rel="stylesheet" href="{{ printf "css/themes/%s.css" $theme | relURL }}">
     <link rel="stylesheet" href="{{ "css/obsidian.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/lang.css" | relURL }}">
 
+    {{ partial "google_analytics" . }}
 </head>
 <body style="overflow: auto; -webkit-user-select: text; -moz-user-select: text; user-select: text;" class="theme-light">
+    {{ if .Site.IsMultilingual }}
+    <!-- 多语言切换菜单 -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="language-dropdown-button">
+                <span>{{ .Language.LanguageName }}</span>
+                <span class="language-dropdown-arrow"></span>
+            </div>
+            <div class="language-dropdown-content">
+                {{ $translations := dict }}
+                {{ range .Translations }}
+                  {{ $translations = merge $translations (dict .Language.Lang .) }}
+                {{ end }}
+                {{ range .Site.Languages }}{{ with index $translations .Lang }}
+                <a href="{{ .RelPermalink }}" {{ if eq .Language.Lang $.Language.Lang }}class="current-language"{{ end }}>
+                    {{ .Language.LanguageName }}
+                </a>
+                {{ end }}{{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    
     {{- block "main" . }}{{- end }}
+
+    {{ if .Site.Params.branding }}
+      {{ partial "mdf-brand" . }}
+    {{ end }}
 </body>
 </html>

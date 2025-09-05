@@ -1,0 +1,18 @@
+{{- $repo := .Get "repo" | default "YOUR_GITHUB_USERNAME/YOUR_REPO" -}}
+{{- $theme := .Get "theme" | default "github-light" -}}
+{{- $issue := .Get "issue" -}}
+{{- $term := .Get "term" | default "pathname" -}}
+
+<section id="comments" class="utterances">
+    <script src="https://utteranc.es/client.js"
+            repo="{{ $repo }}"
+            {{- if $issue -}}
+            issue-number="{{ $issue }}"
+            {{- else -}}
+            issue-term="{{ $term }}"
+            {{- end }}
+            theme="{{ $theme }}"
+            crossorigin="anonymous"
+            async>
+    </script>
+</section>

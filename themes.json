@@ -3,9 +3,9 @@
 		"id": 1,
 		"name": "Book",
 		"author": "Alex Shpak",
-		"version": "1.0",
+		"version": "1.1",
 		"screenshot": "https://gohugo.net/tn-book.png",
-		"download_url": "https://gohugo.net/book.zip?version=1.0",
+		"download_url": "https://gohugo.net/book.zip?version=1.1",
 		"demo_url": "https://theme-book.mdfriday.com",
 		"demo_notes_url": "https://github.com/mdfriday/themes/tree/main/book/content",
 		"tags": [
@@ -17,9 +17,9 @@
 		"id": 2,
 		"name": "Note",
 		"author": "MDFriday Team",
-		"version": "1.0",
+		"version": "1.2",
 		"screenshot": "https://gohugo.net/tn-note.png",
-		"download_url": "https://gohugo.net/note.zip?version=1.0",
+		"download_url": "https://gohugo.net/note.zip?version=1.2",
 		"demo_url": "https://theme-note.mdfriday.com",
 		"demo_notes_url": "https://github.com/mdfriday/themes/tree/main/note/content",
 		"tags": [
@@ -32,15 +32,27 @@
 		"id": 3,
 		"name": "Obsidian Book",
 		"author": "MDFriday Team",
-		"version": "1.0",
+		"version": "1.1",
 		"screenshot": "https://gohugo.net/tn-book-ob.jpg",
-		"download_url": "https://gohugo.net/book-ob.zip?version=1.0",
+		"download_url": "https://gohugo.net/book-ob.zip?version=1.1",
 		"demo_url": "https://theme-book-ob.mdfriday.com",
 		"demo_notes_url": "https://github.com/mdfriday/themes/tree/main/book-ob/content",
 		"tags": [
 			"Book",
 			"Obsidian",
 			"Doc"
+		]
+	},
+	{
+		"id": 4,
+		"name": "Base",
+		"author": "MDFriday Base",
+		"version": "1.0",
+		"screenshot": "https://gohugo.net/tn-base.jpg",
+		"download_url": "https://gohugo.net/base.zip?version=1.0",
+		"demo_url": "https://theme-base.mdfriday.com",
+		"demo_notes_url": "https://github.com/mdfriday/themes/tree/main/base/content",
+		"tags": [
 		]
 	}
 ]

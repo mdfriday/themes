@@ -4,7 +4,7 @@ type: docs
 weight: 1
 ---
 
-# Acerbo datus maxime
+# 中文
 
 ## Tempora nisi nunc
 
@@ -24,6 +24,4 @@ sequens!
 
 Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab?
 
-
-![[mdfriday.png]]
-
+![MDFriday](mdfriday.png)
